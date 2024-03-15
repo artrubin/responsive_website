@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- your existing head content -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Your navigation bar content -->
+        </nav>
+
+        <!-- Tagline -->
+        <div class="row">
+            <div class="col">
+                <h3 class="home">Start your Fitness Journey Today!</h3>
+            </div>
+        </div>
+
+        <!-- Intro Message -->
+        <div class="row">
+            <div class="col">
+                <h4 class="home">Thank you for your payment!</h4>
+            </div>
+        </div>
+
+        <!-- Payment Form -->
+        <form action="mailto:geekphysique@gmail.com" method="post" enctype="text/plain" class="row g-3" onsubmit="showThankYouPopup()">
+            <!-- Card Number -->
+            <div class="col-md-12">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" name="cardNumber" pattern="\d*" maxlength="16" placeholder="Enter card number" required>
+            </div>
+
+            <!-- Expiry Date -->
+            <div class="col-md-6">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" name="expiryDate" pattern="\d*" maxlength="4" placeholder="MMYY" required>
+            </div>
+
+            <!-- CCV Number -->
+            <div class="col-md-6">
+                <label for="ccvNumber" class="form-label">CCV Number</label>
+                <input type="text" class="form-control" id="ccvNumber" name="ccvNumber" pattern="\d*" maxlength="3" placeholder="Enter CCV number" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit Payment</button>
+            </div>
+        </form>
+
+        <!-- Footer Container -->
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <p>&copy; 2023 Geek Physique Ltd</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JS File for additional functionality -->
+    <script src="scripts/payment_validation.js"></script>
+    <script>
+        function showThankYouPopup() {
+            alert("Thank You For Your Payment!");
+            window.location.href = "https://sourcecodedotie.github.io/geekphysique.xyz/index.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    
+    <!-- Link to Google Fonts for Roboto and Montserrat fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Link to external CSS File -->
+    <link rel="stylesheet"  href="styles.css">
+    <!-- Link to Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/images/favicon.png">
+
+</head>
+
+<body>
+    <!--Bootstrap grid added to ensure page is responsive-->
+    <div class="container">
+        <div class="header">
+        <!--header-->
+            <div class="row">
+        <!-- Navbar Structure -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div class="col-md-3">
+              <div class="logo">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <a href="index.html"><img src="images/images/geek3.png" class="img-fluid" alt="GymImage1"></a>
+              </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <!-- Your Navigation Links -->
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="classes.html">Classes</a></li>
+                <li class="nav-item"><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a href="signup.html">Sign Up</a></li>
+                <li class="nav-item"><a href="minigame.html">Play a Game</a></li>
+                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+            </div>
+        </div>
+        <!--Bootstrap grid added to ensure gallery is responsive-->
+        <div class="row">
+            <div class="col">
+                <h3 class="home">Start your Fitness Journey Today!</h3>
+            </div>
+        </div>
+        <!-- 1st row with 3 cols -->
+        <div class="row">
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym1.jpg"  id="zoom" class="img-fluid" onclick="showMessage()" alt="GymImage1">
+                    <figcaption>Full Body Fitness</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym2.jpg"  class="img-fluid" id="zoom1" onclick="showMessage()" alt="GymImage2">
+                    <figcaption>Barbell Bootcamp</figcaption>
+                </figure>
+            </div>
+            <div class="col"><!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym3.jpg" class="img-fluid" id="zoom2" onclick="showMessage()" alt="GymImage3">
+                    <figcaption>Meet Our Staff</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- 2nd row with 3 cols -->
+        <div class="row">
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym4.jpg" class="img-fluid" id="zoom3" onclick="showMessage()" alt="GymImage4">
+                    <figcaption>Personal Training</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym5.jpg" class="img-fluid" id="zoom4" onclick="showMessage()" alt="GymImage5">
+                    <figcaption>Free Weights Area</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym6.jpg" class="img-fluid" id="zoom5" onclick="showMessage()" alt="GymImage6">
+                    <figcaption>Relax Area</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- 3rd row with 3 cols -->
+        <div class="row">
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym7.jpg" class="img-fluid" id="zoom6" onclick="showMessage()" alt="GymImage7">
+                    <figcaption>Stretching Area</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym8.jpg" class="img-fluid" id="zoom7" onclick="showMessage()" alt="GymImage8">
+                    <figcaption>Boxing Arena</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <!--Image Source: canva.com, Paid Professional Subscription -->
+                <figure>
+                    <img src="images/images/Gym9.jpg" class="img-fluid" id="zoom8" onclick="showMessage()" alt="GymImage9">
+                    <figcaption>Swimming Pool</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <p>&copy; 2023 Geek Physique Ltd</p>
+                </footer>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Link to external JS File -->
+    <script  src="scripts/gallery_validations.js"></script>
+</body>
+</html>
